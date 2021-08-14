@@ -1,39 +1,45 @@
 /* ------ all ------ */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* ------ body ------ */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
-/* ------ Header Start ------ */
-
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+.header-line {
+    width: 20rem;
+    height: 2px;
+    background-color: black;
+    margin-top: -.5em;
+    margin-bottom: 2.5em;
+    
+}
+  /* ------ Header Start ------ */
 header {
-    width: 100%;
-    background-color: rgba(23, 23, 23, .300);
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.3);
+  padding: 18px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 header .head-section {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 header a {
-    text-decoration: none;
-    margin-right: 50px;
-    letter-spacing: 1px;
-    color: black;
+  text-decoration: none;
+  margin-right: 50px;
+  letter-spacing: 1px;
+  color: black;
 }
-a:hover {
-    color: rgb(65, 61, 61);
+header a:hover {
+  color: black;
 }
 
 /* ------ Header End ------ */
@@ -41,90 +47,142 @@ a:hover {
 /* ------ Main  Start ------ */
 
 .banner-section {
-    width: 100%;
-    height: 100vh;
-    background-image: url("./images/home-image.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/home-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
 }
 .main-content h1 {
-    margin: 0;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  font-size: 40px;
+  font-family: "Raleway",Georgia, "Times New Roman", Times, serif;
 }
-.welcome {
-    font-family: cursive,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-div .main-arrow a{
-    color: black;
-    text-decoration: none;
+div .main-arrow a {
+  color: black;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 600px){
-    .main-content h1{
-        font-size: 26px;
-    }
-    header a {
-        margin-right: 15px;
-    }
+@media screen and (max-width: 600px) {
+  .main-content h1 {
+    font-size: 26px;
+  }
+  header a {
+    margin-right: 15px;
+  }
+  .welcome h4{
+      margin-top: 3px;
+      font-size: 17px;
+  }
 }
 
 .section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* ------ Main  End ------ */
 
 /* ------ About  Start ------ */
 
 #about {
-    display: grid;
-    justify-items: center;
-    font-family: Georgia,'Times New Roman', Times, serif;
+  display: grid;
+  justify-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 2em;
+  color: black;
+
+}
+#about h1 {
+  font-size: 25px;
+  font-weight: 700;
+
 }
 #about span {
-    font-size: 45px;
+  font-size: 40px;
+  font-weight: 700;
+
 }
 .about {
-    background-color: rgba(65, 61, 61, .300);
+  background-color: rgba(65, 61, 61, 0.3);
 }
 .left-section {
-    margin-bottom: 2em;
-    width: 606px;
-    height: 450px;
-    background-image: url("./images/black&white\ me.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
+  margin-bottom: 2em;
+  width: 606px;
+  height: 450px;
+  background-image: url("./images/black&white\ me.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.about-content p {
+  font-size: 20px;
+  color: black;
+}
+.details-me {
+  font-size: 20px;
+  color: black;
+
 }
 
 /* ------ About  End ------ */
 
 /* ------ services  Start ------ */
 #services {
-    display: grid;
-    justify-items: center;
-    font-family: Georgia,'Times New Roman', Times, serif;
+  display: grid;
+  justify-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 2em;
+  color: black;
+
+}
+#services h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
 #services span {
-    font-size: 45px;
+  font-size: 40px;
+  font-weight: 700;
 }
 .services {
-    width: 100%;
-    height: 70vh;
-    background-image: url("./images/services-image.jpg");
-    background-position: top;
-    background-size: cover;
-
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-image: url("./images/services-image.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .icons {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+}
+.left-services h1,
+.right-services h1 {
+  font-size: 20px;
+  color: black;
+}
+.left-services p,
+.right-services p {
+  font-size: 20px;
+  color: black;
+
+}
+.line-programming {
+  width: 150px;
+  height: 2px;
+  background-color: black;
+}
+.line-webdesigning {
+  width: 151px;
+  height: 2px;
+  background-color: black;
+}
+.line-programming, .line-webdesigning {
+    margin-top: -5px;
+    margin-bottom: 6px;
 }
 
 /* ------ Services  End ------ */
@@ -132,37 +190,85 @@ div .main-arrow a{
 /* ------ Skills  Start ------ */
 
 #skills {
-    display: grid;
-    justify-items: center;
-    font-family: Georgia,'Times New Roman', Times, serif;
+  display: grid;
+  justify-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 2em;
+  color: black;
+}
+#skills h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
 #skills span {
-    font-size: 45px;
+  font-size: 40px;
+  font-weight: 700;
 }
 .skills {
-    background-color: rgba(65, 61, 61, .300);
+  background-color: rgba(65, 61, 61, 0.3);
+  color: black;
 }
-.box-1, .box-2, .box-3 {
-    width: 400px;
-    height: 24px;
-    background-color: #fff;
-    border: solid 2px rgb(201, 166, 166);
+.left-skills h1,
+.right-skills h1 {
+  font-size: 20px;
+}
+.left-skills p,
+.right-skills p {
+  font-size: 20px;
+}
+.line-technical {
+  width: 170px;
+  height: 2px;
+  background-color: black;
+}
+.line-hobbies {
+  width: 116px;
+  height: 2px;
+  background-color: black;
+}
+.line-technical, .line-hobbies {
+    margin-top: -5px;
+    margin-bottom: 6px;
+}
+.left-skills2 {
+    margin-top: 2.5em;
+    padding-bottom: 1em;
+}
+.box-1,
+.box-2,
+.box-3 {
+  width: 400px;
+  height: 24px;
+  background-color: #fff;
+  border: solid 2px rgb(201, 166, 166);
 }
 .subbox-1 {
-    width: 380px;
-    height: 20px;
-    background-color: #131212;
+  width: 380px;
+  height: 20px;
+  background-color: #131212;
 }
 .subbox-2 {
-    width: 340px;
-    height: 20px;
-    background-color: #131212;
+  width: 340px;
+  height: 20px;
+  background-color: #131212;
 }
 .subbox-3 {
-    width: 300px;
-    height: 20px;
-    background-color: #131212;
+  width: 300px;
+  height: 20px;
+  background-color: #131212;
 }
-
+.right-skills2 i {
+  padding-right: 8px;
+}
+.hobby-1,
+.hobby-2,
+.hobby-3,
+.hobby-4,
+.right-skills2 {
+  font-size: 25px;
+  margin-top: 1em;
+}
+.right-skills2 {
+    padding-bottom: 1em;
+}
 /* ------ Skills  End ------ */
-
